@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232ba6fb'><path d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.93-1.28 4.88-2.12 5.86-2.54 2.79-1.16 3.37-1.36 3.75-1.37.08 0 .27.02.39.12.1.08.13.2.14.28-.01.06.01.24 0 .38z'/></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#0e1621" />
+    <meta name="description" content="AetherGram - Exportador seguro y 100% client-side de chats y bots restringidos de Telegram mediante MTProto 2.0 y Zero-Knowledge." />
+    <title>AetherGram | Zero-Knowledge MTProto Extractor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Polyfill de inicialización temprana de Node.js para GramJS -->
+    <script>
+      window.global = window;
+      window.process = window.process || {};
+      window.process.env = window.process.env || {};
+      window.process.version = 'v18.0.0';
+      window.process.versions = window.process.versions || { node: '18.0.0' };
+      window.process.browser = true;
+      window.process.nextTick = window.process.nextTick || function(cb) { setTimeout(cb, 0); };
+    </script>
+  </head>
+  <body class="bg-tg-bg text-tg-text antialiased min-h-screen selection:bg-tg-primary selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

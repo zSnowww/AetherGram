@@ -1,0 +1,45 @@
+{
+  "name": "aethergram",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Client-Side MTProto Zero-Knowledge Extractor & Exporter for restricted/banned bots, channels, and deleted user accounts on Telegram.",
+  "license": "MIT",
+  "author": "zSnow (@zsnow_7)",
+  "keywords": [
+    "telegram",
+    "mtproto",
+    "telegram-bot",
+    "takeout",
+    "chat-exporter",
+    "backup",
+    "zero-knowledge",
+    "react",
+    "vite"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.475.0",
+    "qrcode": "^1.5.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.6.0",
+    "telegram": "^2.26.16"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.2",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.1.0",
+    "vite-plugin-node-polyfills": "^0.23.0"
+  }
+}
